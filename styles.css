@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+	--darkCyan: hsl(158, 36%, 37%);
+	--cream: hsl(30, 38%, 92%);
+	--veryDarkBlue: hsl(212, 21%, 14%);
+	--darkGrayishBlue: hsl(228, 12%, 48%);
+	--white: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.875rem;
+
+	background-color: var(--cream);
+	color: var(--darkGrayishBlue);
+
+	height: 100vh;
+
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+}
+
+.container-fluid:first-child{
+	background-color: var(--white);
+	max-width: 40rem;
+	border-radius: 0.7rem;
+	overflow: hidden;
+}
+
+.img-col{
+	padding: 0;
+}
+
+picture {
+	overflow: hidden;
+}
+
+picture img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.px{
+	padding: 0 1.9rem;
+}
+
+.letter-space{
+	letter-spacing: 8px;
+}
+
+h1, h2{
+	font-family: 'Fraunces', sans-serif;
+}
+
+h1{
+	line-height: 2.375rem;
+	color: var(--veryDarkBlue);
+}
+
+h2{
+	color: var(--darkCyan);
+}
+
+#btn-addtocart{
+	background-color: var(--darkCyan);
+	color: var(--white);
+}
+
+#btn-addtocart:hover{
+	background-color: hsl(158, 36%, 17%);
+}
+
+.btn-text{
+	font-size: 0.875rem;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	color: var(--veryDarkBlue);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 768px){
+	body{
+		overflow-y: unset;
+		margin: 2rem auto;
+	}
+
+	.container-fluid:first-child{
+		width: 90vw;
+	}
+
+	footer{
+		top: 100vh;
+	}
+}
+
+@media (hover: hover){
+	#btn-addtocart:hover{
+		background-color: hsl(158, 36%, 17%);
+	}
+}
